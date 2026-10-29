@@ -2,55 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 5rem;
-    }
-
-    body {
-        @apply bg-ink-900 font-sans text-slate-200 antialiased;
-    }
+:root {
+    color-scheme: light;
 }
 
-@layer components {
-    .nav-link {
-        @apply relative px-1 py-2 text-sm font-medium text-slate-300 transition-colors hover:text-white after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:rounded-full after:bg-accent-500 after:transition-transform after:duration-300 hover:after:scale-x-100;
-    }
-
-    .section-title {
-        @apply font-display text-3xl font-bold tracking-tight text-white sm:text-4xl;
-    }
-
-    .section-title::after {
-        content: '';
-        @apply mt-3 block h-1 w-14 rounded-full bg-accent-500;
-    }
-
-    .book-card {
-        @apply flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-800/80 shadow-lg shadow-black/30 backdrop-blur transition duration-300 ease-out hover:-translate-y-2 hover:border-brand-400/60 hover:shadow-2xl hover:shadow-brand-500/20;
-    }
-
-    .reveal {
-        opacity: 0;
-    }
-
-    .reveal.is-visible {
-        @apply animate-fade-up;
-    }
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: reduce) {
+body {
+    @apply bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 text-slate-800 antialiased;
+}
 
-    *,
-    *::before,
-    *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: .01ms !important;
-    }
+.book {
+    @apply overflow-hidden rounded-3xl border border-slate-200 bg-white/90 shadow-soft backdrop-blur-sm transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl;
+}
 
-    .reveal {
-        opacity: 1;
-    }
+.book img {
+    @apply h-72 w-full border-b border-slate-200 bg-gradient-to-b from-slate-50 to-white object-contain p-4;
+}
+
+.book h3 {
+    @apply mb-3 px-4 pt-4 text-lg font-bold text-slate-900;
+}
+
+.book p {
+    @apply px-4 pb-4 text-sm leading-6 text-slate-600;
+}
+
+.status {
+    @apply rounded-2xl border border-blue-200 bg-blue-50 p-4 font-semibold text-blue-900;
+}
+
+.status.error {
+    @apply border-red-200 bg-red-50 text-red-700;
+}
+
+#about {
+    @apply bg-white/80 backdrop-blur-sm;
+}
+
+#contact {
+    @apply bg-white/80 backdrop-blur-sm;
 }

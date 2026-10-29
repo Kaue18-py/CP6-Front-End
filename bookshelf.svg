@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Estante de livros">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#edf4ff"/>
+      <stop offset="100%" stop-color="#dfeaff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" rx="36" fill="url(#bg)"/>
+  <rect x="120" y="560" width="560" height="40" rx="20" fill="#8b5e3c"/>
+  <rect x="150" y="220" width="500" height="340" rx="20" fill="#c78a5a"/>
+  <rect x="170" y="240" width="110" height="300" rx="12" fill="#f7d7a8"/>
+  <rect x="300" y="240" width="110" height="300" rx="12" fill="#f5c98d"/>
+  <rect x="430" y="240" width="110" height="300" rx="12" fill="#f8c489"/>
+  <rect x="560" y="240" width="70" height="300" rx="12" fill="#f1b36f"/>
+  <g fill="#7d4b2d">
+    <rect x="182" y="260" width="86" height="12" rx="6"/>
+    <rect x="182" y="290" width="86" height="12" rx="6"/>
+    <rect x="182" y="320" width="86" height="12" rx="6"/>
+    <rect x="182" y="350" width="86" height="12" rx="6"/>
+    <rect x="182" y="380" width="86" height="12" rx="6"/>
+    <rect x="312" y="260" width="86" height="12" rx="6"/>
+    <rect x="312" y="290" width="86" height="12" rx="6"/>
+    <rect x="312" y="320" width="86" height="12" rx="6"/>
+    <rect x="312" y="350" width="86" height="12" rx="6"/>
+    <rect x="312" y="380" width="86" height="12" rx="6"/>
+    <rect x="442" y="260" width="86" height="12" rx="6"/>
+    <rect x="442" y="290" width="86" height="12" rx="6"/>
+    <rect x="442" y="320" width="86" height="12" rx="6"/>
+    <rect x="442" y="350" width="86" height="12" rx="6"/>
+    <rect x="442" y="380" width="86" height="12" rx="6"/>
+  </g>
+  <g fill="#fff" opacity="0.9">
+    <circle cx="220" cy="145" r="52"/>
+    <circle cx="610" cy="170" r="42"/>
+    <circle cx="640" cy="110" r="20"/>
+  </g>
+</svg>
